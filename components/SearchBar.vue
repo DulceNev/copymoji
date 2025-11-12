@@ -6,7 +6,7 @@ interface Props {
 </script>
 <template>
   <label
-    class="input rounded-full border-3 border-primary text-primary w-2/3 lg:w-1/3"
+    class="input rounded-full border-2 border-primary text-primary w-2/3 lg:w-1/3"
   >
     <svg
       class="h-[1em] opacity-50 text-primary"
