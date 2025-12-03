@@ -21,10 +21,11 @@
       <button class=" text-primary text-sm font-semibold cursor-pointer py-1 px-8 rounded-full hover:bg-primary hover:text-primary-content active:scale-95 transition-all" popovertarget="popover-1" style="anchor-name:--anchor-1">
       Menu
       </button>
-      <ul class="dropdown menu w-52 rounded-box bg-base-100 shadow-sm border-1 border-primary space-y-1"popover id="popover-1" style="position-anchor:--anchor-1">
+      <ul  id="popover-1"  class="dropdown menu w-52 rounded-box bg-base-100 shadow-sm border-1 border-primary space-y-1"  popover style="position-anchor:--anchor-1">
       <li><NavButton text="Dot Art" to="/dot-art" /></li>
       <li><NavButton text="Personas" to="/buscar-personas" /></li>
       <li><NavButton text="Mi Perfil" to="/mi-perfil" /></li>
+      
 </ul>
     </header>
 
