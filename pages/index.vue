@@ -56,10 +56,18 @@ import CardContentHomepage from '~/components/CardContentHomepage.vue';
     <div class="w-full py-16 bg-primary-content text-center">
       <h2 class="text-lg font-bold text-primary mb-10 tracking-widest uppercase">¿Qué encontraré aquí?</h2>
       <div class="flex flex-wrap items-center justify-center gap-8 px-6 max-w-7xl mx-auto">
-        <CardContentHomepage />
-        <CardContentHomepage />
-        <CardContentHomepage />
-        <CardContentHomepage />
+        <CardContentHomepage title="Kaomojis"
+          description="Emoticones de estilo japonés que usan caracteres para crear expresiones adorables adecuados para cada situación."
+          to="/kaomojis" image="/img/gato-cute.jpg" />
+        <CardContentHomepage title="Separadores"
+          description="Líneas decorativas diseñadas para dividir secciones en tus mensajes y darles una estructura visual limpia y bonita."
+          to="/separadores" image="/img/gato-cute.jpg" />
+        <CardContentHomepage title="Simbolos"
+          description="Pequeños elementos y caracteres especiales para resaltar palabras o darle un toque único a tus nombres y perfiles."
+          to="/simbolos" image="/img/gato-cute.jpg" />
+        <CardContentHomepage title="Dot Art"
+          description="Mini ilustraciones y marcos minimalistas en estilo pixel. Perfectos para tus fotos o tus mensajes."
+          to="/dot-art" image="/img/gato-cute.jpg" />
       </div>
     </div>
   </div>
