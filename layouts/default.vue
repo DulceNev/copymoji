@@ -40,9 +40,6 @@
       <slot />
     </main>
 
-    <!-- 🦶 FOOTER -->
-    <footer class="text-center p-4 text-sm bg-primary-content text-gray-400">
-      Diseñado con amor por Dulce Nevarez 2025.
-    </footer>
+
   </div>
 </template>
