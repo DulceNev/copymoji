@@ -1,5 +1,16 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 
+const generator = ref<any>(null)
+const gallery = ref<string[]>([])
+
+function addToGallery() {
+  if (generator.value && generator.value.asciiOutput) {
+    // Evitar duplicados consecutivos si se desea, o permitir todo. 
+    // El usuario solo dijo "agregar automáticamente".
+    gallery.value.unshift(generator.value.asciiOutput)
+  }
+}
 </script>
 
 <template>
@@ -10,12 +21,24 @@ Imágenes muy complejas o con muchos colores pueden perder detalle al convertirs
     </div>
 
  <div class="flex flex-col items-center justify-center">
-  <DotArtGenarator/>
-   <ActionButton text="Agregar DotArt" class="mt-5 mb-5"/>
+  <DotArtGenarator ref="generator"/>
+   <ActionButton text="Agregar" class="mt-8 mb-8 text-lg px-12 py-2" @click="addToGallery"/>
  </div>
 
- <div>
-    <p>Galeria de Dot Art</p>
+ <div class="w-full max-w-6xl mx-auto px-4 mb-20">
+    <h2 class="text-xl font-bold text-center text-primary mb-6">Galeria de Dot Art</h2>
+    
+    <div v-if="gallery.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+       <DotArtCard 
+         v-for="(art, index) in gallery" 
+         :key="index" 
+         :art="art" 
+       />
+    </div>
+    <div v-else class="text-center text-secondary opacity-50 py-10">
+        <Icon name="pixelarticons:image-gallery" class="text-6xl mb-2" />
+        <p>¡Crea y agrega algo de arte!</p>
+    </div>
  </div>
  
 

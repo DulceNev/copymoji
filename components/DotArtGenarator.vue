@@ -153,6 +153,10 @@ function generateDotArt() {
   isGenerating = false
 }
 
+defineExpose({
+  asciiOutput
+})
+
 async function copyToClipboard() {
   const text = asciiOutput.value || ""
   if (!text.trim()) {
