@@ -3,20 +3,12 @@
 
     <KaomojiFinder description="Símbolos decorativos para resaltar y dar un toque único a tu contenido" placeholderSearch="Escribe para buscar simbolos..."/>
 
-      <section>
         <div class="flex gap-3 justify-center">
-          <button
-            class="noto-sans text-secondary border-1 rounded-lg p-2 text-sm"
-          >
-            ‧₊ ᵎᵎ 🍒 ⋅ ˚✮
-          </button>
-
-          <button
-            class="noto-sans text-secondary border-1 rounded-lg p-2 text-sm"
-          >
-            ⋆.˚🦋༘⋆
-          </button>
+      <KaomojiItem kaomoji="♡" />
+<KaomojiItem kaomoji="✦" />
+<KaomojiItem kaomoji="✧" />
+<KaomojiItem kaomoji="☆" />
+<KaomojiItem kaomoji="❀" />
         </div>
-      </section>
   </main>
 </template>

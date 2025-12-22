@@ -10,9 +10,12 @@ import KaomojiFinder from '~/components/KaomojiFinder.vue';
         <KaomojiFinder description="¡Encuentra y copia adorables emoticones para hacer tus mensajes más lindos!"
             placeholderSearch="Escribe para buscar kaomojis..." />
 
-        <section>
-            <button class="noto-sans text-secondary border-1 rounded-lg p-2 text-sm">
-                (˶>⩊<˶) </button>
-        </section>
+        <div class="flex flex-wrap justify-center gap-4 w-full px-4">
+            <KaomojiItem kaomoji="(≧◡≦) ♡" />
+<KaomojiItem kaomoji="(｡˃ ᵕ ˂ )ﾉ" />
+<KaomojiItem kaomoji="(づ｡◕‿‿◕｡)づ" />
+<KaomojiItem kaomoji="(๑˃ᴗ˂)ﻭ" />
+<KaomojiItem kaomoji="(≧ω≦)ゞ" />
+        </div>
     </main>
 </template>

@@ -8,17 +8,15 @@ import KaomojiFinder from '~/components/KaomojiFinder.vue';
 
   <KaomojiFinder description="Separadores decorativos para dividir y embellecer tu contenido. ¡Úsalos en tu web o blog!" placeholderSearch="Escribe para buscar separadores..."/>
 
-      <section>
-        <div
-          class="tooltip tooltip-primary"
-          data-tip="como se ponen iconos aqui aa"
-        >
-          <button
-            class="noto-sans text-secondary border-1 rounded-lg p-2 text-sm"
-          >
-            ❀・❀・❀・❀・❀
-          </button>
-        </div>
-      </section>
+      
+    <div class="flex flex-wrap justify-center gap-4 w-full px-4">
+      <KaomojiItem kaomoji="♡˖⁺‧₊˚✧˚₊‧⁺˖♡" />
+      <KaomojiItem kaomoji="─ ✦ ─ ✦ ─ ✦ ─" />
+<KaomojiItem kaomoji="❀ ══ ❀ ══ ❀" />
+<KaomojiItem kaomoji="୨୧‿‿‿‿‿‿‿‿‿‿‿‿‿୨❀୧‿‿‿‿‿‿‿‿‿‿‿‿‿୨୧" />
+
+<KaomojiItem kaomoji="⋆｡˚ ✦ ⋆｡˚ ✦ ⋆｡˚" />
+    </div>
+        
   </main>
 </template>
