@@ -18,7 +18,7 @@ function selectTheme(themeName: string) {
 
 <template>
   <div class="flex flex-col gap-2 px-3 py-2">
-    <span class="text-xs font-semibold text-secondary uppercase tracking-widest">Tema</span>
+    <span class="text-sm font-semibold text-secondary uppercase tracking-widest">Tema</span>
     <div class="flex gap-2">
       <button
         v-for="theme in themes"

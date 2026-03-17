@@ -12,7 +12,7 @@ import CardContentHomepage from '~/components/CardContentHomepage.vue';
             <span class="block  w-4 h-4 border-yellow-400 mb-2">˗ˏˋ</span>
           </span>
 
-          <h1 class="text-secondary text-lg md:text-xl font-mono leading-relaxed tracking-tight max-w-2xl">
+          <h1 class="text-secondary text-xl md:text-2xl font-mono leading-relaxed tracking-tight max-w-2xl">
             Encuentra kaomojis, separadores, decoradores de texto, dot art y todo lo que necesitas para darle magia a
             tus mensajes y posts
           </h1>
@@ -54,7 +54,7 @@ import CardContentHomepage from '~/components/CardContentHomepage.vue';
     </section>
 
     <div class="w-full py-16 bg-primary-content text-center">
-      <h2 class="text-lg font-bold text-primary mb-10 tracking-widest uppercase">¿Qué encontraré aquí?</h2>
+      <h2 class="text-xl font-bold text-primary mb-10 tracking-widest uppercase">¿Qué encontraré aquí?</h2>
       <div class="flex flex-wrap items-center justify-center gap-8 px-6 max-w-7xl mx-auto">
         <CardContentHomepage title="Kaomojis"
           description="Emoticones de estilo japonés que usan caracteres para crear expresiones adorables adecuados para cada situación."

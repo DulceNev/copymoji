@@ -20,13 +20,13 @@ interface Props {
             <div class="flex-1 flex flex-col justify-center py-4 w-full">
                 <h3 class="text-lg font-bold text-primary mb-2">{{ props.title }}</h3>
 
-                <p class="text-secondary text-sm line-clamp-5">
+                <p class="text-secondary text-base line-clamp-5">
                     {{ props.description }}
                 </p>
             </div>
 
             <NuxtLink :to="props.to" active-class="bg-primary text-primary-content"
-                class="mt-auto text-primary text-sm font-semibold cursor-pointer py-2 px-8 rounded-full border-2 border-primary hover:bg-primary hover:text-primary-content active:scale-95 transition-all w-fit">
+                class="mt-auto text-primary text-base font-semibold cursor-pointer py-2 px-8 rounded-full border-2 border-primary hover:bg-primary hover:text-primary-content active:scale-95 transition-all w-fit">
                 Quiero ir aquí!
             </NuxtLink>
 

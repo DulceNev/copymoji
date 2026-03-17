@@ -131,7 +131,7 @@ onMounted(() => {
             transition-all duration-300 
             noto-sans 
             text-secondary 
-            text-sm
+            text-base
             border-primary/30
             hover:border-primary
             border-1 

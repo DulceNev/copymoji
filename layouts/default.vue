@@ -16,7 +16,7 @@
       <NavButton text="Simbolos" to="/simbolos" />
 
       <button
-        class=" text-primary text-sm font-semibold cursor-pointer py-1 px-8 rounded-full hover:bg-primary hover:text-primary-content active:scale-95 transition-all"
+        class=" text-primary text-base font-semibold cursor-pointer py-1 px-8 rounded-full hover:bg-primary hover:text-primary-content active:scale-95 transition-all"
         popovertarget="popover-1" style="anchor-name:--anchor-1">
         Menu
       </button>
