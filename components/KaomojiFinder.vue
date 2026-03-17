@@ -17,5 +17,5 @@ interface Props {
     <SearchBar/>
 
     <FilterMenuBar/>
-      
+
 </template>
