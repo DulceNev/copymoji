@@ -2,11 +2,10 @@
 import FilterMenuBar from './FilterMenuBar.vue';
 import SearchBar from './SearchBar.vue';
 
-
-const props = defineProps<Props>();
-interface Props {
-  description: string;
-}
+const props = defineProps<{
+  description: string
+  filters: string[]
+}>()
 </script>
 
 <template>
@@ -14,8 +13,7 @@ interface Props {
       {{ props.description }}
     </h1>
 
-    <SearchBar/>
+    <SearchBar />
 
-    <FilterMenuBar/>
-
+    <FilterMenuBar :filters="props.filters" />
 </template>

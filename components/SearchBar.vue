@@ -2,6 +2,11 @@
 import { ref } from 'vue'
 
 const showModal = ref(false)
+const { searchQuery, clearFilters } = useContentStore()
+
+function onSearch() {
+  clearFilters()
+}
 </script>
 
 <template>
@@ -24,7 +29,7 @@ const showModal = ref(false)
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" class="grow" placeholder="buscar..." />
+          <input v-model="searchQuery" type="search" class="grow" placeholder="buscar..." @input="onSearch" />
         </label>
 
         <div class="flex items-center gap-2">

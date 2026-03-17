@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import type { ContentItem } from '~/composables/useContentStore'
 
 const props = defineProps<{
   open: boolean
@@ -9,6 +10,8 @@ const emit = defineEmits<{
   close: []
 }>()
 
+const { addItem } = useContentStore()
+
 const categories = [
   { name: 'Kaomojis', icon: 'pixelarticons:mood-happy' },
   { name: 'Separadores', icon: 'pixelarticons:list-box' },
@@ -17,15 +20,14 @@ const categories = [
 
 const content = ref('')
 const tags = ref('')
-const selectedCategory = ref('Kaomojis')
+const selectedCategory = ref<ContentItem['category']>('Kaomojis')
 
 function handleAdd() {
   if (!content.value.trim()) return
 
-  // TODO: guardar el contenido
-  console.log({
-    content: content.value,
-    tags: tags.value.split(',').map(t => t.trim()).filter(Boolean),
+  addItem({
+    content: content.value.trim(),
+    tags: tags.value.split(',').map(t => t.trim().toLowerCase()).filter(Boolean),
     category: selectedCategory.value,
   })
 
