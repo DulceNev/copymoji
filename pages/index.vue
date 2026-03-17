@@ -4,11 +4,11 @@ import CardContentHomepage from '~/components/CardContentHomepage.vue';
 
 <template>
   <div class="flex flex-col items-center w-full min-h-screen">
-    <section class="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
+    <section class="bg-white relative w-full h-[500px] flex items-center justify-center overflow-hidden">
 
-      <div class="relative z-10 text-center max-w-3xl px-10 animate-fade-in">
+      <div class="relative z-10 text-center max-w-3xl px-10 animate-fade-in ">
         <div class="relative inline-block">
-          <span class="absolute -left-12 top-1/2 -translate-y-1/2 text-yellow-400 text-3xl font-light hidden md:block">
+          <span class=" absolute -left-12 top-1/2 -translate-y-1/2 text-yellow-400 text-3xl font-light hidden md:block">
             <span class="block  w-4 h-4 border-yellow-400 mb-2">˗ˏˋ</span>
           </span>
 

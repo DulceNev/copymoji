@@ -6,7 +6,7 @@ import KaomojiFinder from '~/components/KaomojiFinder.vue';
 
 
 <template>
-    <main class="h-full flex flex-col items-center text-center gap-5 py-5">
+    <main class="bg-white h-full flex flex-col items-center text-center gap-5 py-5 bg-white">
         <KaomojiFinder description="¡Encuentra y copia adorables emoticones para hacer tus mensajes más lindos!"
             placeholderSearch="Escribe para buscar kaomojis..." />
 

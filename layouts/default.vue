@@ -20,19 +20,23 @@
         popovertarget="popover-1" style="anchor-name:--anchor-1">
         Menu
       </button>
-      <ul id="popover-1" class="dropdown menu w-52 rounded-box bg-base-100 shadow-sm border-1 border-primary space-y-1"
+      <div id="popover-1" class="dropdown rounded-box bg-base-100 shadow-sm border-1 border-primary overflow-hidden"
         popover style="position-anchor:--anchor-1">
-        <li>
-          <NavButton text="Dot Art" to="/dot-art" />
-        </li>
-        <li>
-          <NavButton text="Personas" to="/buscar-personas" />
-        </li>
-        <li>
-          <NavButton text="Mi Perfil" to="/mi-perfil" />
-        </li>
-
-      </ul>
+        <ul class="menu w-52 space-y-1">
+          <li>
+            <NavButton text="Dot Art" to="/dot-art" />
+          </li>
+          <li>
+            <NavButton text="Personas" to="/buscar-personas" />
+          </li>
+          <li>
+            <NavButton text="Mi Perfil" to="/mi-perfil" />
+          </li>
+        </ul>
+        <div class="border-t border-primary/20 mx-2">
+          <ThemeSelector />
+        </div>
+      </div>
     </header>
 
     <!-- 📄 CONTENIDO DE LA PÁGINA -->
