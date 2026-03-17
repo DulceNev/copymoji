@@ -4,12 +4,12 @@ import CardContentHomepage from '~/components/CardContentHomepage.vue';
 
 <template>
   <div class="flex flex-col items-center w-full min-h-screen">
-    <section class="bg-white relative w-full h-[500px] flex items-center justify-center overflow-hidden">
+    <section class="bg-base-100 relative w-full h-[500px] flex items-center justify-center overflow-hidden">
 
       <div class="relative z-10 text-center max-w-3xl px-10 animate-fade-in ">
         <div class="relative inline-block">
-          <span class=" absolute -left-12 top-1/2 -translate-y-1/2 text-yellow-400 text-3xl font-light hidden md:block">
-            <span class="block  w-4 h-4 border-yellow-400 mb-2">˗ˏˋ</span>
+          <span class="absolute -left-12 top-1/2 -translate-y-1/2 text-primary text-3xl font-light hidden md:block">
+            <span class="block w-4 h-4 mb-2">˗ˏˋ</span>
           </span>
 
           <h1 class="text-secondary text-xl md:text-2xl font-mono leading-relaxed tracking-tight max-w-2xl">
@@ -17,40 +17,55 @@ import CardContentHomepage from '~/components/CardContentHomepage.vue';
             tus mensajes y posts
           </h1>
 
-          <span class="absolute -right-12 top-1/2 -translate-y-1/2 text-yellow-400 text-3xl font-light hidden md:block">
-            <span class="block  w-4 h-4 border-yellow-400 mb-2">ˎˊ˗</span>
-
+          <span class="absolute -right-12 top-1/2 -translate-y-1/2 text-primary text-3xl font-light hidden md:block">
+            <span class="block w-4 h-4 mb-2">ˎˊ˗</span>
           </span>
         </div>
       </div>
 
-      <div class="absolute top-[15%] left-[10%] text-blue-400 text-lg font-mono animate-float-slow">
-        (๑>ᴗ<)و </div>
-          <div class="absolute top-[12%] right-[10%] text-pink-400 text-xl font-mono animate-float-slow-reverse">
-            (/◕ヮ◕)/
-          </div>
-          <div class="absolute bottom-[20%] left-[20%] text-red-500 text-lg font-mono animate-float-slow"
-            style="animation-delay: 1s;">
-            (｡･ᴗー)✧
-          </div>
-          <div class="absolute bottom-[15%] right-[20%] text-green-400 text-lg font-mono animate-float-slow-reverse"
-            style="animation-delay: 1.5s;">
-            (❁´◡`❁)
-          </div>
+      <!-- Kaomojis flotantes -->
+      <div class="absolute top-[10%] left-[8%] text-primary/70 text-2xl md:text-3xl font-mono animate-float-slow">
+        (๑>ᴗ<)و
+      </div>
+      <div class="absolute top-[8%] right-[8%] text-primary/60 text-2xl md:text-3xl font-mono animate-float-slow-reverse">
+        (/◕ヮ◕)/
+      </div>
+      <div class="absolute bottom-[18%] left-[15%] text-secondary/50 text-2xl md:text-3xl font-mono animate-float-slow"
+        style="animation-delay: 1s;">
+        (｡･ᴗー)✧
+      </div>
+      <div class="absolute bottom-[12%] right-[15%] text-primary/65 text-2xl md:text-3xl font-mono animate-float-slow-reverse"
+        style="animation-delay: 1.5s;">
+        (❁´◡`❁)
+      </div>
+      <div class="absolute top-[40%] left-[3%] text-secondary/40 text-xl md:text-2xl font-mono animate-float-slow"
+        style="animation-delay: 2s;">
+        (˶ᵔ ᵕ ᵔ˶)
+      </div>
+      <div class="absolute bottom-[35%] right-[5%] text-primary/55 text-xl md:text-2xl font-mono animate-float-slow-reverse"
+        style="animation-delay: 0.5s;">
+        (ﾉ´ヮ`)ﾉ*:・゚✧
+      </div>
 
-          <div class="absolute top-[25%] left-[40%] text-yellow-300 text-2xl animate-pulse-slow">✧</div>
-          <div class="absolute bottom-[30%] left-[45%] text-yellow-300 text-2xl animate-pulse-slow delay-700">✧</div>
-          <div class="absolute bottom-[40%] right-[10%] text-yellow-300 text-xl animate-pulse-slow">✧</div>
+      <!-- Estrellas -->
+      <div class="absolute top-[20%] left-[35%] text-primary/50 text-3xl animate-pulse-slow">✧</div>
+      <div class="absolute bottom-[25%] left-[50%] text-primary/40 text-4xl animate-pulse-slow" style="animation-delay: 0.7s;">✦</div>
+      <div class="absolute bottom-[40%] right-[12%] text-primary/50 text-3xl animate-pulse-slow" style="animation-delay: 1.2s;">✧</div>
+      <div class="absolute top-[55%] left-[12%] text-primary/35 text-2xl animate-pulse-slow" style="animation-delay: 0.3s;">⋆</div>
+      <div class="absolute top-[8%] left-[45%] text-primary/30 text-2xl animate-pulse-slow" style="animation-delay: 1.8s;">✧</div>
 
-          <div class="absolute top-1/2 left-[5%] text-purple-300 text-xl animate-bounce-very-slow">♡</div>
-          <div class="absolute bottom-[10%] right-[5%] text-purple-300 text-xl animate-bounce-very-slow delay-500">♡
-          </div>
-          <div class="absolute top-[35%] right-[25%] text-purple-200 text-lg animate-bounce-very-slow">♡</div>
+      <!-- Corazones -->
+      <div class="absolute top-[45%] left-[5%] text-primary/60 text-3xl animate-bounce-very-slow">♡</div>
+      <div class="absolute bottom-[8%] right-[8%] text-primary/50 text-3xl animate-bounce-very-slow" style="animation-delay: 0.5s;">♡</div>
+      <div class="absolute top-[30%] right-[22%] text-primary/40 text-2xl animate-bounce-very-slow" style="animation-delay: 1s;">♡</div>
+      <div class="absolute bottom-[5%] left-[40%] text-primary/35 text-2xl animate-bounce-very-slow" style="animation-delay: 1.5s;">♡</div>
 
-          <div class="absolute top-10 left-[20%] w-3 h-3 border border-teal-400 rounded-full opacity-50"></div>
-          <div class="absolute bottom-10 left-[5%] w-2 h-2 border border-green-400 rounded-full opacity-50"></div>
-          <div class="absolute top-8 right-[30%] w-3 h-3 border border-lime-400 rounded-full opacity-50"></div>
-          <div class="absolute bottom-4 left-[45%] w-2 h-2 border border-green-400 rounded-full opacity-50"></div>
+      <!-- Bolitas decorativas -->
+      <div class="absolute top-12 left-[22%] w-4 h-4 bg-primary/30 rounded-full animate-pulse-slow"></div>
+      <div class="absolute bottom-12 left-[6%] w-3 h-3 bg-primary/20 rounded-full animate-pulse-slow" style="animation-delay: 0.5s;"></div>
+      <div class="absolute top-10 right-[28%] w-4 h-4 bg-primary/25 rounded-full animate-pulse-slow" style="animation-delay: 1s;"></div>
+      <div class="absolute bottom-6 left-[50%] w-3 h-3 bg-primary/20 rounded-full animate-pulse-slow" style="animation-delay: 1.5s;"></div>
+      <div class="absolute top-[60%] right-[3%] w-3 h-3 bg-primary/25 rounded-full animate-pulse-slow" style="animation-delay: 0.8s;"></div>
     </section>
 
     <div class="w-full py-16 bg-primary-content text-center">
