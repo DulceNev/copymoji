@@ -1,14 +1,22 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const STORAGE_KEY = 'copymoji_dotart'
+
 const generator = ref<any>(null)
 const gallery = ref<string[]>([])
 
+onMounted(() => {
+  const raw = localStorage.getItem(STORAGE_KEY)
+  if (raw) {
+    try { gallery.value = JSON.parse(raw) } catch {}
+  }
+})
+
 function addToGallery() {
   if (generator.value && generator.value.asciiOutput) {
-    // Evitar duplicados consecutivos si se desea, o permitir todo. 
-    // El usuario solo dijo "agregar automáticamente".
     gallery.value.unshift(generator.value.asciiOutput)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(gallery.value))
   }
 }
 </script>

@@ -2,10 +2,10 @@
 import { ref } from 'vue'
 
 const showModal = ref(false)
-const { searchQuery, clearFilters } = useContentStore()
+const { searchQuery, activeFilter } = useContentStore()
 
 function onSearch() {
-  clearFilters()
+  activeFilter.value = ''
 }
 </script>
 
